@@ -6,7 +6,21 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 
+        웹에서 사용 가능한 이미지 포맷
+        png(투명도를 사용할 수 있는 파일, RGBA A는 투명도), jpeg/jpg(압축 후 저장해서 압축해제 후 보임, 많이 쓰다보면 해상도 낮아짐), 
+        gif(여러 개의 이미지를 합치기 가능, 하지만 해상도는 굉장히 낮음), webp(기능 제일 좋지만 호환성 낮음), svg 등
+    -->
+
     <!-- 절대경로 -->
-    <img src="C:\heeseung\04_HTML_CSS\spring1.png" alt="봄">
+    <!-- 이미지 태그는 인라인 태그 -->
+    <img src="C:\heeseung\04_HTML_CSS\spring1.png" alt="봄"> <!-- 가상서버로 열면 사진이 안 나옴 -->
+    <img src="https://tcpschool.com/img/logo.png" alt="봄"> <!-- 가상서버로 열면 사진이 안 나옴 -->
+
+
+    <!-- 상대경로 -->
+    <img src="spring1.png" alt="봄">
+    <img src="images\spring2.png" alt="봄">
+
 </body>
 </html>
