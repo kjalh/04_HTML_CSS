@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박스 모델</title>
+
+    <style>
+        .box1{
+            box-sizing: border-box;
+            background-color: deepskyblue;
+            padding: 20px;
+            margin-bottom: 50px;
+            border: 1px solid #ccc;
+            width: 300px;
+        }
+        .box2{
+            background-color: deeppink;
+            padding: 20px;
+            margin-top: 30px; /* 겹칠 때 더 큰 50으로 됨 */
+            border: 3px dotted #ccc;
+            width: 300px;
+        }
+    </style>
+
+
 </head>
 <body>
     <!-- 
@@ -52,6 +72,21 @@
         h1 {margin: 0 auto;} /* 시멘틱은 가운데 정렬이 없음 (가로 가운데 정렬하는 코드) */
     -->
 
-    
+    <!--
+        box-sizing
+        CSS에서 요소의 너비와 높이를 어떤 기준으로 결정하는 속성으로, 박스 모델의 크기 계산 방식을 제어
+
+        content-box: width와 height에 내용(content)만 포함하고 padding과 border를 바깥으로 더함
+        border-box: padding과 border를 너비/높이에 포함시켜 요소의 실제 크기를 예측하기 쉽게 만듦
+    -->
+
+
+    <div class="box1"> <!-- .box1 하면 자동을 만듦-->
+        box1
+    </div>
+    <div class="box2">
+        box2
+    </div>
+
 </body>
 </html>
