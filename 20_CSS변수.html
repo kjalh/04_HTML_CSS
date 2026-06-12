@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS변수</title>
+    
+    <style>
+        @font-face {
+            font-family: 'Aggravo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aggravo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroM.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Aggravo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        :root {
+            --main-color: #3498db;
+            --sub-color: #2ecc71;
+            --base-padding: 20px;
+            --title-size: 24px;
+            
+        }
+
+        body{
+        font-family: "Aggravo";
+        margin: 40px;
+        }
+
+        .body{
+            border: 2px solid var(--main-color);
+            padding: var(--base-padding);
+            margin-bottom: 20px;
+        }
+        h1{
+            font-size: var(--title-size);
+            color: var(--main-color);
+        }
+        p{color: var(--sub-color);}
+    </style>
+
+    
+    >
+
+</head>
+
+<body>
+    <!--
+        변수
+        자주 사용하는 스타일 값을 이름으로 정의 해두고 필요할 때마다 재사용할 수 있게 해주는 기능으로,
+        --변수이름 형태로 선언하고 var() 함수로 불러옴
+
+        :root{
+            --main-color: #3498db
+            --font-size0vase: 15px;
+            --spacing: 20px;
+        }
+
+        body{
+            background-color: var(--main-color);
+            font-size: var(--font-size-base);
+        }
+
+        * css 변수에 기본값 지정
+        color: var(--sub-color, black);
+
+        * 범위별 변수
+        .card{
+            --card-padding: 12px;
+            padding: var(--card_padding);
+        }
+    -->
+
+    <div class="box">
+        <h1>CSS 변수 예제</h1>
+        <p>
+            이 예제는 CSS 변수를 이용해 여백과 색상을 관리합니다.
+        </p>
+    </div>
+</body>
+
+</html>
