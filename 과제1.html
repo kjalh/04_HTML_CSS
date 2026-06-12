@@ -21,26 +21,40 @@
             border: 2px solid black;
         }
 
-         header{
+         header, footer{
             margin-bottom: 10px;
-            padding: 30px;
+            padding: 10px;
             border: 1px solid green;
             position: relative;
             
         }
+        
         h1{
             color:green;
             text-align: center;
         }
-        p{
-            position: absolute;
-            left: 10px;
-            bottom: 0px;
-        }
+
 
         .box{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 100px;
             
         }
+        .column{
+            display: flex;
+        }
+
+
+
+
+        
+        p2{
+            text-align: center;
+            margin: 50px;
+        }
+        
+
         
     </style>
 </head>
@@ -50,13 +64,31 @@
         <header>
             <h1>맛집 리스트</h1>
             
-            <p>작성자: 이희승</p>
+            <p1>작성자: 이희승</p1>
         </header>
         
-        <div class="box">맛집1</div>
-        <div class="box">맛집2</div>
-        <div class="box">맛집3</div>
+        <div class="column">
+            <div class="box">
+            맛집1
 
+            <button> 바로가기 </button>
+            </div>
+
+            <div class="box">
+                맛집2
+                <button> 바로가기 </button>
+            </div>
+
+            <div class="box">
+                맛집3
+                <button> 바로가기 </button>
+            </div>
+
+        </div>
+        
+        <footer>
+            <p2>맛집은 여기서 끝</p2>
+        </footer>
 
 
 
