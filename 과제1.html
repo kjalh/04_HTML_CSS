@@ -16,9 +16,10 @@
         /*body{font-family: 'Aggravo';}*/
 
         .container{
+            position: relative;
             width: auto;
             height: 500px;
-            border: 2px solid black;
+            border: 1px solid black;
         }
 
          header, footer{
@@ -28,6 +29,7 @@
             position: relative;
             
         }
+       
         
         h1{
             color:green;
@@ -37,12 +39,25 @@
 
         .box{
             border: 1px solid black;
-            margin: 10px;
+            margin: 40px;
             padding: 100px;
+            background-color: darkgrey;
             
         }
+        .box:hover{
+            transform: scale(1.2);
+            background-color: aqua;
+            
+            transition-duration: 0.5s;
+            /*transition-delay: 0.2s;*/
+
+
         .column{
             display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+        
         }
 
 
@@ -71,24 +86,24 @@
             <div class="box">
             맛집1
 
-            <button> 바로가기 </button>
+            
             </div>
 
             <div class="box">
                 맛집2
-                <button> 바로가기 </button>
+                
             </div>
 
             <div class="box">
                 맛집3
-                <button> 바로가기 </button>
+                
             </div>
 
         </div>
         
-        <footer>
+        <!-- <footer>
             <p2>맛집은 여기서 끝</p2>
-        </footer>
+        </footer> -->
 
 
 
