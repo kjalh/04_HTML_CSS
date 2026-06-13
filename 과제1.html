@@ -18,38 +18,46 @@
         .container{
             position: relative;
             width: auto;
-            height: 500px;
+            height: auto;
             border: 1px solid black;
         }
 
-         header, footer{
-            margin-bottom: 10px;
+        header{
             padding: 10px;
             border: 1px solid green;
             position: relative;
-            
         }
-       
         
+        footer{
+            border: 1px solid black;
+            position: relative;
+        }
         h1{
             color:green;
             text-align: center;
         }
 
-
-        .box{
-            border: 1px solid black;
-            margin: 40px;
-            padding: 100px;
-            background-color: darkgrey;
-            
+        footer{
+            text-align: center;
+            text-size-adjust: 30px;
+            size: 30%;
         }
-        .box:hover{
+
+
+        a{
+            border: 1px solid black;
+            margin: 5%;
+            padding: 5%; 
+            background-color: darkgrey;
+            position: relative;
+            width: 13%;                   
+        }
+        a:hover{
             transform: scale(1.2);
             background-color: aqua;
             
             transition-duration: 0.5s;
-            /*transition-delay: 0.2s;*/
+
         }
 
 
@@ -57,17 +65,21 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-
-        
         }
 
 
         
-        p2{
-            text-align: center;
-            margin: 50px;
+        p{
+           font-size: 30px;
+           text-align: center;
         }
         
+        img{
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin-left: 25%;
+        }
 
         
     </style>
@@ -82,35 +94,33 @@
         </header>
         
         <div class="column">
-            <div class="box">
-            맛집1
-
             
-            </div>
+            <a href="https://map.naver.com/p/entry/place/1298530125?lng=127.0279819&lat=37.5003861&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606132243&locale=ko&svcName=map_pcv5&entry=plt&searchType=place&c=15.00,0,0,2,dh">
+                <div class="box">
+                    <p>땀땀</p>
+                </div>
+            </a>
+            
 
-            <div class="box">
-                맛집2
-                
-            </div>
+            <a href="https://map.naver.com/p/entry/place/1898369171?lng=127.0256891&lat=37.501217&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606132243&locale=ko&svcName=map_pcv5&entry=plt&searchType=place&c=15.00,0,0,2,dh">
+                <div class="box">
+                    <p>파이브가이즈</p>
+                </div>
 
-            <div class="box">
-                맛집3
-                
-            </div>
+            </a>
+
+            <a href="https://map.naver.com/p/entry/place/1950007630?lng=127.0576445&lat=37.5116328&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202606132242&locale=ko&svcName=map_pcv5&entry=plt&searchType=place&c=15.00,0,0,2,dh">
+                <div class="box">
+                    <p>하이디라오</p>
+                </div>
+            </a>
 
         </div>
         
-        <!-- <footer>
-            <p2>맛집은 여기서 끝</p2>
-        </footer> -->
-
-
-
-
-
-
-
-
+        <footer>
+            <img src="Gemini_Generated_Image_6usvs46usvs46usv.png" 
+            alt="진짜 광고">
+        </footer>
 
 
     </div>
